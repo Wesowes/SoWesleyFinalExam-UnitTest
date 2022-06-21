@@ -23,21 +23,20 @@ public class StringCalculatorTest {
 
     @Test
     public void testCount1() {
-        manipulatedstring.setString("This is my string");
-        int length = manipulatedstring.count();
-        assertEquals(4, length);
+        int calc = manipulatedstring.add("");
+        assertEquals(0, add);
     } // test given by professor
 
-    @Test //first case
-    public void testCount2() {
-        manipulatedstring.setString("H  e l l o");
-        int length = manipulatedstring.count();
-        assertEquals(5, length);
-    } // test to see if its counting the letters as "words", extra space included to test similar feature
+    @Test
+    public void testCount1() {
+        int calc = manipulatedstring.add("-5, 5");
+        assertEquals(0, add);
+    } // test given by professor
 
     @Test
-    public void testCount3() {
-        manipulatedstring.setString("");
-        int length = manipulatedstring.count();
-        assertEquals(0, length);
-    }
+    public void testCount1() {
+        int calc = manipulatedstring.add("-5, 1000");
+        assertEquals(0, add);
+    } // test given by professor
+
+// NOT ENOUGH TIME FOR TESTING
